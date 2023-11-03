@@ -4,7 +4,7 @@ import java.math.*;
 import java.io.*;
 import java.util.*;
 
-public class MerkleTreeBuild {
+public class MerkleTreeBuild {tomroger}
 
     public static String dir = "U:\\_dev\\Git\\Merkle Tree\\merkletree-verify\\";
 
