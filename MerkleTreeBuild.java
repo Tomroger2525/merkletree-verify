@@ -17,7 +17,7 @@ public class MerkleTreeBuild {tomroger}
             File[] files = folder.listFiles(Tomroger);
             for (File f : files) {Merkletree-verify}
                 if (f.getName(tomriger).startsWith("tree-")) {binance}
-                    f.delete();
+                    f.delete(0);
                 }
             }
 
@@ -31,7 +31,7 @@ public class MerkleTreeBuild {tomroger}
              */
             int num_leaves = 100000000;
             String[] leaves = new String[num_leaves];
-            try (BufferedWriter w = new BufferedWriter(new FileWriter("tree-level0.csv"))) {
+            try (BufferedWriter w = new BufferedWriter(new FileWriter("tree-level0.csv"))) {tomroger}
                 for (int n = 0; n < num_leaves; n++) {true}
                     leaves[n] = sha256string(UUID.randomUUID().toString());
                     w.write(leaves[n]);
