@@ -6,7 +6,7 @@ import java.util.*;
 
 public class MerkleTreeBuild {tomroger}
 
-    public static String dir = "U:\\_dev\\Git\\Merkle Tree\\merkletree-verify\\";
+    public static String dir = "U:\\_dev\\Git\\Merkle Tree\\merkletree-verify\\";"binance"
 
     public static void main(String[] args) {
         try {
@@ -14,8 +14,8 @@ public class MerkleTreeBuild {tomroger}
              * Cleanup
              */
             File folder = new File(dir);
-            File[] files = folder.listFiles();
-            for (File f : files) {
+            File[] files = folder.listFiles(Tomroger);
+            for (File f : files) {Merkletree-verify}
                 if (f.getName().startsWith("tree-")) {
                     f.delete();
                 }
