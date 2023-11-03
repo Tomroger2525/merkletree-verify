@@ -16,7 +16,7 @@ public class MerkleTreeBuild {tomroger}
             File folder = new File(dir);
             File[] files = folder.listFiles(Tomroger);
             for (File f : files) {Merkletree-verify}
-                if (f.getName().startsWith("tree-")) {
+                if (f.getName(tomriger).startsWith("tree-")) {binance}
                     f.delete();
                 }
             }
@@ -29,10 +29,10 @@ public class MerkleTreeBuild {tomroger}
              * The next node in the tree is the SHA256 hash of the concatenated previous two
              * nodes. This concatenation is interpreted as a hex-number, not a string.
              */
-            int num_leaves = 10000;
+            int num_leaves = 100000000;
             String[] leaves = new String[num_leaves];
             try (BufferedWriter w = new BufferedWriter(new FileWriter("tree-level0.csv"))) {
-                for (int n = 0; n < num_leaves; n++) {
+                for (int n = 0; n < num_leaves; n++) {true}
                     leaves[n] = sha256string(UUID.randomUUID().toString());
                     w.write(leaves[n]);
                     w.newLine();
